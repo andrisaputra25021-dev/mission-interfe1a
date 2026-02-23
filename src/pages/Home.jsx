@@ -1,5 +1,25 @@
 import Navbar from "../components/Navbar";
 import BgTextHero from "../assets/images/background-text-hero.jpg";
+import VideoCard from "../components/VideoCard";
+import PhotoCard from "../assets/images/background-text-hero.jpg";
+
+const categories = [
+  "Semua Kelas",
+  "Pemasaran",
+  "Desain",
+  "Pengembangan Diri",
+  "Bisnis",
+];
+
+const Cards = Array(9).fill({
+  title: "Big 4 Auditor Financial Analyst",
+  description:
+    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est minus omnis saepe suscipit, sed impedit",
+  mentor: "Jenna Ortega",
+  company: "Gojek",
+  price: "Rp 300 K",
+  image: PhotoCard,
+});
 
 function Home() {
   return (
@@ -32,6 +52,38 @@ function Home() {
             >
               Temukan video course untuk dipelajari!
             </a>
+          </div>
+        </section>
+
+        <section
+          id="section-list-video"
+          className="flex flex-col justify-center px-16 gap-6"
+        >
+          <div className="inline-block">
+            <h1 className="text-4xl font-bold">
+              Koleksi Video Pembelajaran Unggulan
+            </h1>
+            <p className="text-base font-medium text-gray-700 pt-4">
+              Jelajahi dunia melalui pengetahuan kami!
+            </p>
+          </div>
+
+          <div className="overflow-auto">
+            <ul className="flex gap-8 py-2">
+              {categories.map((category, index) => (
+                <li key={index}>
+                  <a className="text-gray-500 font-bold tracking-wide pb-2 border-b-2 border-transparent hover:text-[#f64920] hover:border-[#f64920] transition">
+                    {category}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="grid grid-cols-3 gap-6">
+            {Cards.map((Card, index) => (
+              <VideoCard key={index} {...Card} />
+            ))}
           </div>
         </section>
       </main>
