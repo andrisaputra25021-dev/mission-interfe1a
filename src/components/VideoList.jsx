@@ -41,7 +41,7 @@ function VideoList() {
         <ul className="flex gap-8 py-2">
           {categories.map((category, index) => (
             <li key={index}>
-              <a className="text-gray-500 font-bold tracking-wide pb-2 border-b-2 border-transparent hover:text-[#f64920] hover:border-[#f64920] transition">
+              <a className="text-gray-500 font-bold tracking-wide pb-2 border-b-3 border-transparent transition hover:text-[#f64920] hover:border-[#f64920] ">
                 {category}
               </a>
             </li>

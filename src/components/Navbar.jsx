@@ -14,12 +14,15 @@ function Navbar() {
         <Link to="/category" className="text-black/50">
           Kategori
         </Link>
-        <Link to="/login" className="px-4 py-2 bg-[#3ecf4c] text-white rounded">
+        <Link
+          to="/login"
+          className="px-4 py-2 bg-[#3ecf4c] text-white rounded transition hover:scale-110"
+        >
           Login
         </Link>
         <Link
           to="/register"
-          className="px-4 py-2 bg-white-500 text-[#3ecf4c] rounded border border-[#3ecf4c]"
+          className="px-4 py-2 bg-white-500 text-[#3ecf4c] rounded border border-[#3ecf4c] transition hover:scale-110"
         >
           Register
         </Link>
