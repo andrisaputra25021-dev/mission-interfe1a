@@ -3,17 +3,17 @@ import Logo from "../assets/images/Logo.png";
 
 function Navbar() {
   return (
-    <nav className="fixed top-0 w-full h-20 bg-white border-b border-black/15 z-50 flex items-center justify-between px-20">
-      <div className="container-logo">
+    <nav className="fixed top-0 w-full h-20 bg-white border-b border-black/15 z-50 flex items-center justify-between px-20 z-1000">
+      <div>
         <Link to="/">
-          <img src={Logo} alt="videobelajar-logo" className="w-full" />
+          <img src={Logo} alt="Logo" className="w-full" />
         </Link>
       </div>
 
-      <div className="navlinks flex items-center gap-4 cursor-pointer">
-        <a href="#" className="text-black/50">
+      <div className="flex items-center gap-4 cursor-pointer">
+        <Link to="/category" className="text-black/50">
           Kategori
-        </a>
+        </Link>
         <Link to="/login" className="px-4 py-2 bg-[#3ecf4c] text-white rounded">
           Login
         </Link>
