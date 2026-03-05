@@ -15,8 +15,10 @@ export default function VideoCard({
       </div>
 
       <div className="flex flex-col gap-2">
-        <h2 className="text-xl font-bold">{title}</h2>
-        <p className="text-gray-500 text-sm line-clamp-2">{description}</p>
+        <h2 className="text-md md:text-xl font-bold">{title}</h2>
+        <p className="hidden lg:text-gray-500 md:text-sm md:line-clamp-2">
+          {description}
+        </p>
       </div>
 
       <div className="flex items-center gap-3">
@@ -41,7 +43,7 @@ export default function VideoCard({
           <span className="text-gray-500 ml-2">(100)</span>
         </div>
         <div
-          className="text-[#3ecf4c] text-3xl
+          className="text-[#3ecf4c] text-xl md:text-2xl lg:text-3xl
          font-bold"
         >
           {price}

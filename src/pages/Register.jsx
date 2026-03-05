@@ -6,7 +6,7 @@ import GoogleIcon from "../assets/images/logos_google-icon.png";
 function Register() {
   return (
     <>
-      <nav className="fixed top-0 w-full h-20 bg-white border-b border-black/15 z-50 flex items-center justify-between px-20 z-1000">
+      <nav className="fixed top-0 w-full h-20 bg-white border-b border-black/15 z-50 flex items-center justify-between px-20">
         <div>
           <Link to="/">
             <img src={Logo} alt="Logo" className="w-full" />
@@ -18,19 +18,22 @@ function Register() {
         </button>
       </nav>
 
-      <section>
-        <form className="mx-80 my-12 px-16 py-12 flex flex-col rounded-lg border border-black/15 px-4 py-4">
+      <section className="max-w-[1440px] mx-auto">
+        <form className="gap-2 mx-4 my-8 px-4 py-4 flex flex-col rounded-lg border-2 border-black/15 md:mx-20 lg:mx-80 md:px-10 lg:px-16 md:py-8 lg:py-12">
           <div className="inline-block justify-center text-center">
-            <h1 className="text-black text-5xl font-semibold">
+            <h1 className="text-black text-3xl md:text-4xl lg:text-5xl font-semibold">
               Pendaftaran Akun
             </h1>
-            <p className="text-xl font-semibold text-black/50">
+            <p className="text-sm md:text-xl lg:text-2xl font-semibold text-black/50">
               Yuk, daftarkan akunmu sekarang juga!
             </p>
           </div>
 
           <div className="form-input">
-            <label htmlFor="text" className="flex text-xl text-black/75">
+            <label
+              htmlFor="text"
+              className="flex text-md md:text-md lg:text-xl text-black/75"
+            >
               Nama Lengkap<span className="text-orange-500">*</span>
             </label>
             <input
@@ -41,7 +44,10 @@ function Register() {
               className="w-full p-2 border-2 border-black/25 rounded-lg"
             />
 
-            <label htmlFor="email" className="flex text-xl text-black/75">
+            <label
+              htmlFor="email"
+              className="flex text-md md:text-md lg:text-xl text-black/75"
+            >
               Email<span className="text-orange-500">*</span>
             </label>
             <input
@@ -52,13 +58,16 @@ function Register() {
               className="w-full p-2 border-2 border-black/25 rounded-lg"
             />
 
-            <label htmlFor="phone" className="flex text-xl text-black/75">
+            <label
+              htmlFor="phone"
+              className="flex text-md md:text-md lg:text-xl text-black/75"
+            >
               No. HP<span className="text-orange-500">*</span>
             </label>
-            <div className="country-phone flex items-center gap-3">
-              <div className="country-code border-2 border-black/25 flex items-center gap-2 pr-8 rounded-lg cursor-pointer fa-2">
+            <div className="country-phone flex items-center gap-1 md:gap-2 lg:gap-3">
+              <div className="country-code border-2 border-black/25 flex items-center gap-1 md:gap-2 lg:gap-3 pr-10 rounded-lg cursor-pointer fa-2">
                 <img src={PlagID} alt="ID" />
-                <select name="number" id="number" className="px-1">
+                <select name="number" id="number" className="md:px-1 lg:px-2">
                   <option value="Indonesia">
                     <p>+62</p>
                     <i className="fa-solid fa-chevron-down" />
@@ -74,7 +83,10 @@ function Register() {
               />
             </div>
 
-            <label htmlFor="password" className="flex text-xl text-black/75">
+            <label
+              htmlFor="password"
+              className="flex text-md md:text-md lg:text-xl text-black/75"
+            >
               Kata Sandi<span className="text-orange-500">*</span>
             </label>
             <div className="password-field relative">
@@ -90,8 +102,11 @@ function Register() {
                 cursor-pointer absolute text-black/50 absolute right-3 top-3 hover:text-orange-500"
               />
             </div>
-            <label htmlFor="password" className="flex text-xl text-black/75">
-              Kata Sandi<span className="text-orange-500">*</span>
+            <label
+              htmlFor="password"
+              className="flex text-md md:text-md lg:text-xl text-black/75"
+            >
+              Konfirmasi Kata Sandi<span className="text-orange-500">*</span>
             </label>
             <div className="password-field relative">
               <input
@@ -106,27 +121,27 @@ function Register() {
                 cursor-pointer absolute text-black/50 absolute right-3 top-3 hover:text-orange-500"
               />
             </div>
-            <div className="text-base text-right font-medium text-black/50 hover:text-orange-500">
+            <div className="text-base text-right text-md md:text-md lg:text-xl font-semibold text-black/50 hover:text-orange-500">
               <Link to="#">Lupa Password?</Link>
             </div>
 
             <div className="flex flex-col justify-center items-center mt-4 gap-4">
               <button
                 id="button-sign-up"
-                className="w-full text-white bg-[#3ecf4c] p-3 text-xl rounded-lg cursor-pointer"
+                className="w-full text-white bg-[#3ecf4c] p-3 text-md md:text-md lg:text-xl rounded-lg cursor-pointer"
               >
                 Daftar
               </button>
               <button
                 id="button-login"
-                className="w-full text-[#3ecf4c] bg-[#e2fcd9] p-3 text-xl rounded-lg cursor-pointer"
+                className="w-full text-[#3ecf4c] bg-[#e2fcd9] p-3 text-md md:text-md lg:text-xl rounded-lg cursor-pointer"
               >
                 Masuk
               </button>
               <p className="text-black/50">atau</p>
               <button
                 id="button-sso-google"
-                className="border-2 border-black/25 bg-gray-100 flex justify-center items-center gap-4 w-full text-black/75 p-3 text-xl rounded-lg cursor-pointer"
+                className="border-2 border-black/25 bg-gray-100 flex justify-center items-center gap-4 w-full text-black/75 p-3 text-md md:text-md lg:text-xl rounded-lg cursor-pointer"
               >
                 <div className="w-4 h-4">
                   <img src={GoogleIcon} alt="google-icon" />

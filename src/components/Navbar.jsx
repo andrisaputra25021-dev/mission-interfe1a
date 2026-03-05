@@ -3,14 +3,14 @@ import Logo from "../assets/images/Logo.png";
 
 function Navbar() {
   return (
-    <nav className="fixed top-0 w-full h-20 bg-white border-b border-black/15 z-50 flex items-center justify-between px-20 z-1000">
-      <div>
+    <nav className="fixed top-0 w-full z-1000 h-16 md:h-20 lg:h-20 bg-white border-b border-black/15 flex items-center justify-between px-6 md:px-12 lg:px-16">
+      <div className="">
         <Link to="/">
-          <img src={Logo} alt="Logo" className="w-full" />
+          <img src={Logo} alt="Logo" className="w-35 md:w-full" />
         </Link>
       </div>
 
-      <div className="flex items-center gap-4 cursor-pointer">
+      <div className="hidden md:flex md:items-center md:gap-4 cursor-pointer">
         <Link to="/category" className="text-black/50">
           Kategori
         </Link>
@@ -28,7 +28,7 @@ function Navbar() {
         </Link>
       </div>
 
-      <button id="menu" className="hidden">
+      <button id="menu" className=" text-3xl md:hidden">
         <i className="fa-solid fa-bars"></i>
       </button>
     </nav>

@@ -8,10 +8,12 @@ function Home() {
   return (
     <>
       <Navbar />
-      <Intro />
-      <VideoList />
-      <CTA />
-      <Footer />
+      <main className="max-w-[1440px] mx-auto">
+        <Intro />
+        <VideoList />
+        <CTA />
+        <Footer />
+      </main>
     </>
   );
 }
