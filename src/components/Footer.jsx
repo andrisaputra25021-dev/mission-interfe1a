@@ -71,20 +71,20 @@ function Footer() {
         <div className="flex gap-4 text-2xl">
           <FontAwesomeIcon
             icon={faLinkedin}
-            className="hover:text-[#ffbd3a] transition cursor-pointer"
+            className="hover:text-[#ffbd3a] transition cursor-pointer hover:scale-110"
           />
 
           <FontAwesomeIcon
             icon={faInstagram}
-            className="hover:text-[#ffbd3a] transition cursor-pointer"
+            className="hover:text-[#ffbd3a] transition cursor-pointer hover:scale-110"
           />
           <FontAwesomeIcon
             icon={faFacebook}
-            className="hover:text-[#ffbd3a] transition cursor-pointer"
+            className="hover:text-[#ffbd3a] transition cursor-pointer hover:scale-110"
           />
           <FontAwesomeIcon
             icon={faTwitter}
-            className="hover:text-[#ffbd3a] transition cursor-pointer"
+            className="hover:text-[#ffbd3a] transition cursor-pointer hover:scale-110"
           />
         </div>
       </div>

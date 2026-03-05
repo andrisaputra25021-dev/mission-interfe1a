@@ -26,7 +26,7 @@ function CTA() {
             placeholder="Masukkan Emailmu"
             className="w-full bg-white w-full px-4 py-2 rounded-xl text-black-500 focus:outline-none border"
           ></input>
-          <button className="absolute right-1 top-1 bottom-1 text-white bg-[#ffbd3a] px-4 py-1 rounded-lg font-semibold transition hover:bg-[#3ecf4c] hover:scale-105">
+          <button className="absolute right-1 top-1 bottom-1 text-white bg-[#ffbd3a] px-4 py-1 rounded-lg font-semibold transition hover:bg-[#3ecf4c] hover:scale-105 cursor-pointer">
             Subcribe
           </button>
         </div>

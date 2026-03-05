@@ -23,7 +23,7 @@ function Intro() {
         </p>
         <a
           href="#section-list-video"
-          className="bg-[#3ecf4c] text-white font-bold tracking-wide px-4 py-2 rounded-xl"
+          className="bg-[#3ecf4c] text-white font-bold tracking-wide px-4 py-2 rounded-xl transition hover:scale-105"
         >
           Temukan video course untuk dipelajari!
         </a>

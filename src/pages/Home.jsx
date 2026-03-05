@@ -8,12 +8,10 @@ function Home() {
   return (
     <>
       <Navbar />
-      <main className="pt-20 bg-[#fffdf3] min-h-screen">
-        <Intro />
-        <VideoList />
-        <CTA />
-        <Footer />
-      </main>
+      <Intro />
+      <VideoList />
+      <CTA />
+      <Footer />
     </>
   );
 }
